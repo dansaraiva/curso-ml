@@ -1,0 +1,56 @@
+# Introdução ao Machine Learning e Fundamentos de Dados
+
+Este repositório contém conceitos fundamentais sobre Aprendizado de Máquina, estruturados para fins acadêmicos e profissionais.
+
+
+## 1. O que é Machine Learning?
+
+O **Machine Learning (Aprendizado de Máquina)** é uma subárea da Inteligência Artificial que foca no desenvolvimento de algoritmos capazes de extrair padrões de grandes conjuntos de dados. Diferente da programação tradicional, onde as regras são escritas manualmente, no ML o sistema ajusta seus próprios parâmetros internos para realizar previsões ou tomar decisões baseadas em experiências anteriores.
+
+
+## 2. Divisão do Dataset: Treino, Validação e Teste
+
+Para construir modelos que funcionem bem com dados desconhecidos (generalização), dividimos os dados em três conjuntos distintos:
+
+* **Conjunto de Treinamento:** É a maior parte dos dados. O algoritmo utiliza este conjunto para aprender as relações entre as variáveis de entrada e o alvo (*target*).
+* **Conjunto de Validação:** Utilizado para ajustar os hiperparâmetros do modelo durante o processo de treinamento. Ele ajuda a detectar o *overfitting* (quando o modelo decora o treino mas falha em novos dados).
+* **Conjunto de Teste:** Utilizado apenas uma vez, ao final do projeto, para fornecer uma avaliação imparcial do desempenho final do modelo.
+
+
+## 3. Tratamento de Dados Ausentes
+
+A presença de valores nulos pode causar erros em algoritmos matemáticos. As estratégias recomendadas incluem:
+
+1.  **Exclusão (Deletion):** Remover linhas ou colunas com muitos dados faltantes (recomendado apenas se a perda de dados for pequena).
+2.  **Imputação Estatística:** Preencher lacunas com a **média**, **mediana** ou **moda** dos dados existentes.
+3.  **Imputação Preditiva:** Utilizar outro modelo de ML (como KNN ou Regressão) para estimar o valor mais provável para o campo vazio.
+4.  **Inclusão de Flag:** Criar uma variável binária para indicar que o dado original estava ausente, o que pode ser uma informação útil para o modelo.
+
+## 4. Matriz de Confusão e Avaliação de Desempenho
+
+A **Matriz de Confusão** é uma tabela que permite visualizar o desempenho de um algoritmo de classificação. Ela correlaciona as previsões do modelo com os valores reais.
+
+### Estrutura da Matriz:
+
+| | Previsto: Positivo | Previsto: Negativo |
+| :--- | :---: | :---: |
+| **Real: Positivo** | Verdadeiro Positivo (VP) | Falso Negativo (FN) |
+| **Real: Negativo** | Falso Positivo (FP) | Verdadeiro Negativo (VN) |
+
+**Principais Métricas Derivadas:**
+* **Acurácia:** Proporção total de acertos.
+* **Precisão:** Qualidade das previsões positivas.
+* **Recall (Sensibilidade):** Capacidade de identificar todos os casos positivos reais.
+
+
+## 5. Áreas de Aplicação Estratégica
+
+O Machine Learning tem demonstrado alto valor agregado em setores específicos:
+
+* **Saúde:** Diagnóstico precoce por processamento de imagem e análise genômica.
+* **Agricultura:** Otimização de colheitas e detecção de pragas via visão computacional.
+* **Manufatura:** Manutenção preditiva de maquinário industrial para redução de custos operacionais.
+* **Energia:** Gestão inteligente de microrredes e sistemas de energia fotovoltaica.
+
+> **Docente/Autor:** Daniel Saraiva  
+> **Área:** Tecnologia e Computação Aplicada
